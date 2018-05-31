@@ -1,0 +1,151 @@
+@media screen and (max-width:768px) {
+	.header-logo{
+		display: none;
+	}
+	.list-indicator{
+		display: none;
+	}
+	.header__top768{
+		position: fixed;
+		background-color: #000;
+		opacity: 0.8;
+		width: 100%;
+		height: 85px;
+		display: block;
+		top: 0;
+		z-index: 1000;
+	}
+	.logo{
+		display: none;
+	}
+	.logo--768{
+		display: block;
+		top: 10px;
+		left: 20px;
+	}
+	.logo__name{
+		position: static;
+		text-align: center;
+		width: 100%;
+		height: 180px;
+		line-height: 180px;
+		p {
+		font-size: 36px;
+		font-family: "HelveticaNeueCyr-Bold";
+		color: rgb(29, 112, 183);
+		text-transform: uppercase;
+		}
+		p:before{
+			display: none;
+		}
+	}
+	.social{
+		display: none;
+	}
+	.socil--768{
+		display: block;
+		top: 24px;
+		right: 85px;
+	}
+	.hamburger-menu {
+		display: none;
+	}
+	.hamburger-menu--768{
+		display: block;
+		top: 22px;
+	}
+	/* header */
+	.logo--header{
+		display: block;
+		margin: 0 auto;
+	}
+	.logo__number--header{
+		font-size: 130px;
+	}
+	.logo__circle--header{
+		width: 20px;
+		height: 20px;
+	}
+	.logo__title--header{
+		font-size: 25px;
+	}
+	/* header end */
+	/* description */
+	.list__element{
+		margin-right: 5px;
+	}
+	.description{
+		padding-top: 90px;
+	}
+	.description__content div{
+		margin-top: 90px;
+		margin: 40px;
+	}
+	/* description end */
+	/* putin */
+	.putin__quote{
+		margin: 0 5vw;
+	}
+	.putin__signature{
+		margin: 0 5vw;
+	}
+	/* putin end */
+	/* news  */
+	.news{
+		padding-top: 0px;
+	}
+	.slider{
+		width: 90%;
+	}
+	.slide--center{
+		height: 381px;
+	}
+	.subscribe{
+		margin-top: 80px;
+	}
+	/* news end */
+	/* study */
+	.study{
+		padding-top: 0px;
+		background-color: #f1f1f1;
+	}
+	/* study end */
+	/* command */
+	.command{
+		padding-top: 0px;
+	}
+	.pages-slider{
+		width: 621px;
+	}	
+	.pages-slider__page---768{
+		display: none;
+	}
+	/* command end */
+	/* footer */
+	.footer__send{
+		position: static;
+		padding-left: 0px;
+		div{
+			width: 380px;
+			margin: 0 auto;
+		}
+	}
+	.footer__contacts{
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+		padding: 0;
+		padding-top: 55px;
+	}
+	.contacts__block{
+		width: 30%;
+	}
+	/* footer end */
+
+
+
+
+
+
+
+}

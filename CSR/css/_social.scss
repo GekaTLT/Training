@@ -1,0 +1,30 @@
+/* social */
+.social{
+	position: absolute;
+	top: 32px;
+	right: 166px;
+	z-index: 10;
+}
+.social__icon{
+	border: 1px solid #fff;
+	border-radius: 50%;
+	width: 36px;
+	height: 36px;
+	display: inline-block;
+	margin-left: 7px;
+	background: url(../img/social.png) no-repeat;
+}
+.social__icon--dark{
+	border-color: #333;
+	background: url(../img/social_black.png) no-repeat;
+}
+.social__icon--fb{
+	background-position: 13px 11px;
+}
+.social__icon--youtube{
+	background-position: -36px 12px;
+}
+.social__icon--vk{
+	background-position: -85px 11px;
+}
+/* social end */
