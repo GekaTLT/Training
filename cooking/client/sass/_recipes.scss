@@ -1,0 +1,27 @@
+.recipes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.recipes__recipe{
+  width: 300px;
+  margin: 1%;
+}
+
+.recipes__recipe__name{
+  text-align: center;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.recipes__recipe__description{
+
+}
+.recipes__recipe__ingredients{
+  font-size: 0.8em;
+}
+.recipes__recipe__cooking{
+  display: none;
+}
