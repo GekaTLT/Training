@@ -1,0 +1,207 @@
+.architecture{
+	margin: 0 auto;
+	max-width: 1600px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	&__line-info{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		width: 100%;
+		padding: 0 10%; 
+		margin: 0 auto;
+		&__text{
+			width: 20%;
+			text-align: center;
+			font-family: "Open Sans";
+			color: rgb(200, 160, 48);
+			padding: 0;
+			margin: 0;
+		}
+		&__text--uppercase{
+			text-transform: uppercase;
+			font-size: 22px;
+		}
+		hr{
+			background-color: rgb(236, 200, 100);
+			width: 91%;
+			height: 1px;
+			border: none;
+			margin-left: 8%;
+		}
+	}
+	&__blocks{
+		border: 1px solid #d7d7d7;
+		width: 356px;
+		height: 364px;
+		text-align: center;
+		&__text{
+			font-size: 16px;
+			font-family: "Open Sans";
+			color: rgb(77, 77, 77);
+			display: block;
+			background-color: #fff;
+			margin: -10px auto;
+			width: 50%;
+			height: 80px;
+		}
+		> div{
+			border: 1px solid #2f7bc0;
+			width: 295px;
+			height: 276px;
+			margin: 0 auto;
+			> p{
+				color: #2f7bc0;
+				span{
+					text-transform: uppercase;
+				}
+			}
+			> div{
+				border: 1px solid #cccccc;
+				width: 231px;
+				height: 194px;
+				margin: 0 auto;
+				> div{
+					border: 1px solid #ffd45d;
+					width: 160px;
+					height: 118px;
+					margin: 0 auto;
+					background:url('img/gold.png') no-repeat;
+					background-position: center center;
+					position: relative;
+					.architecture__blocks__text{
+						height: auto;
+					}
+					.architecture__blocks__text--in{
+						font-size: 16px;
+						font-family: "Open Sans";
+						color: rgb(77, 77, 77);
+						position: absolute;
+						bottom: -10px;
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+	&__map{
+		max-width: 430px;
+		text-align: center;
+		
+		&__img{
+			width: 100%;
+			margin: 10px auto;
+		}
+		&__money{
+			padding-left: 50px;
+			background:url('img/money_mobile.png') left top no-repeat;
+			background-size: contain;
+			&:last-child{
+				background:url('img/money_card.png') left top no-repeat;
+				background-size: contain;
+			}
+			li{
+				list-style: none;
+				position: relative;
+				margin-left: 10px;
+				text-align: left;
+				font-size: 16px;
+				font-family: "Open Sans";
+				color: rgb(77, 77, 77);
+
+				&:after{
+					content: '-';
+					position: absolute;
+					display: block;
+					top: 0;
+					left: -10px;
+				}
+			}
+		}
+	}
+	&__info{
+		max-width: 400px;
+		text-align: center;
+		&__img{
+			margin: 0 auto;
+			width: 70%;
+		}
+		&__list{
+			li{
+				list-style: none;
+				position: relative;
+				margin-left: 10px;
+				text-align: left;
+				font-size: 16px;
+				font-family: "Open Sans";
+				color: rgb(77, 77, 77);
+
+				&:after{
+					content: '-';
+					position: absolute;
+					display: block;
+					top: 0;
+					left: -10px;
+				}
+			}
+		}
+	}
+}
+.architecture__arrows{
+	background-color: #559dd3;
+	position: relative;
+	width: 60%;
+	height: 1px;
+	margin: 0 auto;
+	&:before{
+		content: '';
+		position: absolute;
+		display: block;
+		width: 1px;
+		height: 12px;
+		background-color: #559dd3;
+		top: -12px;
+		left: 50%;
+	}
+	div{
+		border-top: 8px solid #559dd3;
+		border-left: 4px solid transparent;
+		border-right: 4px solid transparent;
+		border-bottom: 8px solid transparent;
+		position: absolute;
+		bottom: -28px;
+		left: -4px;
+		&:last-child{
+			left: auto;
+			right: -3px;
+		}
+		&:before{
+		content: '';
+		position: absolute;
+		display: block;
+		width: 1px;
+		height: 12px;
+		background-color: #559dd3;
+		top: -20px;
+		left: 50%;
+		}
+	}
+}
+.architecture__block-title{
+	font-size: 16px;
+	font-family: "Open Sans";
+	color: rgb(47, 123, 192);
+	span{
+		text-transform: uppercase;
+	}
+}
+	
+@media screen and (max-width: 594px) {
+	.architecture__line-info__text{
+		font-size: 8px;
+	}
+	.architecture__line-info__text--uppercase{
+		font-size: 12px;
+	}
+}

@@ -1,0 +1,49 @@
+.paper{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	min-height: 540px;
+}
+	.paper__box{
+		width: 320px;
+		text-align: center;
+		padding-top: 60px;
+		background:url('img/paper_bg.png') center top no-repeat;
+		margin: 30px auto;
+		&:last-child{
+			background:url('img/paper_bg_one.png') center top no-repeat;
+		}
+	}
+		.paper__box__title{
+			font-size: 36px;
+			font-family: "Open Sans";
+			color: rgb(47, 123, 192);
+			text-transform: uppercase;
+			margin: 0;
+		}
+		.paper__box__text{
+			font-size: 18px;
+			font-family: "Open Sans";
+			color: rgb(87, 87, 87);
+
+		}
+		.paper__box__button{
+			margin: 10px auto;
+			border-width: 2px;
+			border-color: rgb(47, 123, 192);
+			border-style: solid;
+			border-radius: 26px;
+			background-color: rgb(255, 255, 255);
+			width: 208px;
+			height: 48px;
+			font-size: 18px;
+			font-family: "Open Sans";
+			color: rgb(47, 123, 192);
+			font-weight: bold;
+			text-transform: uppercase;
+			cursor: pointer;
+			&:hover{
+				background-color: rgb(47, 123, 192);
+				color: #fff;
+			}
+		}

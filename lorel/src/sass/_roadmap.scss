@@ -1,0 +1,174 @@
+.roadmap{
+	width: 90%;
+	margin: 0 auto;
+}
+	.roadmap__arrow{
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		background:linear-gradient(90deg, #c8b270 30%, rgb(35, 102, 163) 0);
+		height: 20px;
+		padding: 0 70px;
+		margin: 350px auto;
+		position: relative;
+		&:after{
+			content: '';
+			width: 0;
+			height: 0;
+			border-left: 26px solid rgb(35, 102, 163);
+			border-right: 26px solid transparent;
+			border-top: 18px solid transparent;
+			border-bottom: 18px solid transparent;
+			position: absolute;
+			right: -43px;
+			top: -8px;
+		}
+	}
+		.roadmap__arrow__circle{
+			border-style: solid;
+			border-width: 4px;
+			border-color: rgb(47, 123, 192);
+			border-radius: 50%;
+			background-color: rgb(255, 255, 255);
+			width: 99px;
+			height: 99px;
+			margin-top: -44px;
+			text-align: center;
+			position: relative;
+			&:nth-child(1), &:nth-child(2){
+				border-color: #e3c877;
+				background-color: #e3c877;
+				.roadmap__arrow__circle__year{
+					color: #fff;
+				}
+				.roadmap__arrow__circle__q{
+					color: #fff;
+				}
+			}
+			&:nth-child(3){
+				border-color: #e3c877;
+			}
+			&:after{
+				content: '';
+				display: block;
+				background-color: rgb(170, 170, 170);
+				position: absolute;
+				width: 1px;
+				height: 56px;
+				left: 50%;
+				top: -65px;
+			}
+			&:nth-child(2n):after{
+				top: auto;
+				bottom: -65px;
+			}
+			&:nth-child(2n){
+				.roadmap__arrow__circle__info{
+					bottom: auto;
+					top: 170px;
+				}	
+			}
+		}
+			.roadmap__arrow__circle__year{
+				font-size: 24px;
+				font-family: "Open Sans";
+				color: rgb(87, 87, 87);
+				font-weight: 800;
+				margin: 0 auto;
+				margin-top: 35px;
+			}
+			.roadmap__arrow__circle__q{
+				font-size: 18px;
+				font-family: "Open Sans";
+				color: rgb(87, 87, 87);
+				text-transform: uppercase;
+				margin: 0;
+			}
+			.roadmap__arrow__circle__info{
+				width: 250px;
+				position: absolute;
+				bottom: 170px;
+				left: -75px;
+				text-align: center;
+			}
+				.roadmap__arrow__circle__info__title{
+					font-size: 18px;
+					font-family: "Open Sans";
+					color: rgb(87, 87, 87);
+					text-transform: uppercase;
+					font-weight: 800;
+					width: 130px;
+					margin: 0 auto;
+				}
+				.roadmap__arrow__circle__info__content{
+					font-size: 18px;
+					font-family: "Open Sans";
+					color: rgb(87, 87, 87);
+				}
+@media screen and (max-width: 1265px) {
+	.roadmap__arrow{
+		flex-direction: column;
+		width: 20px;
+		height: auto;
+		padding: 70px 0;
+		background:linear-gradient(180deg, #c8b270 30%, rgb(35, 102, 163) 0);
+		margin: 30px auto;
+		&:after{
+			content: '';
+			width: 0;
+			height: 0;
+			border-top: 26px solid rgb(35, 102, 163);
+			border-bottom: 26px solid transparent;
+			border-left: 18px solid transparent;
+			border-right: 18px solid transparent;
+			position: absolute;
+			right: -8px;
+			top: auto;
+			bottom: -43px;
+		}
+	}
+	.roadmap__arrow__circle{
+		margin: 20px auto;
+		margin-left: -44px;
+			&:after{
+				width: 56px;
+				height: 1px;
+				top: 50px;
+				left: -65px;
+			}
+			&:nth-child(2n):after{
+				top: 50px;
+				left: auto;
+				right: -65px;
+			}
+			&:nth-child(2n){
+				.roadmap__arrow__circle__info{
+					left: auto;
+					right: -260px;
+					top: 40px;
+				}	
+			}
+	}
+	.roadmap__arrow__circle__info{
+		bottom: auto;
+		left: -260px;
+		top: 40px;
+	}
+}
+@media screen and (max-width: 640px) {
+	.roadmap__arrow{
+		background:linear-gradient(180deg, #c8b270 26%, rgb(35, 102, 163) 0);
+	}
+	.roadmap__arrow__circle{
+		margin-bottom: 200px;
+		&:after{
+			display: none;
+		}
+	}
+	.roadmap__arrow__circle__info{
+		position: static;
+		margin: 30px auto;
+		margin-left: -75px;
+		background-color: #fff;
+	}
+}

@@ -1,0 +1,279 @@
+body{
+	padding-top: 114px;
+}
+.header-wrapper{
+	width: 100%;
+	background:url('img/header_waev_bg.png') no-repeat;
+	background-position: 0 100%;
+}
+.header{
+	margin: 0 auto;
+	max-width: 1600px;
+	background:url('img/header_bg.png') no-repeat;
+	background-size: 50% 50%;
+	background-position: 70% 50%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	&__coming{
+		display: inline-block;
+		text-align: center;
+		max-width: 540px;
+		margin-bottom: 50px;
+		&__title{
+			font-size: 36px;
+			font-family: "Open Sans";
+			color: rgb(47, 123, 192);
+			text-transform: uppercase;
+			margin: 0;
+		}
+		&__title--currency{
+			font-size: 60px;
+			font-family: "Currency";
+			color: rgb(237, 201, 100);
+			text-transform: uppercase;
+		}
+		&__bonus{
+			font-size: 23px;
+			font-family: "Open Sans";
+			color: rgb(87, 87, 87);
+			text-transform: uppercase;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-weight: normal;
+			line-height: 90px;
+			> span{
+				font-size: 29px;
+				color: rgb(43, 105, 152);
+				font-weight: bold;
+				background:url('img/bonus_bg.png') no-repeat;
+				background-size: cover;
+				padding-left: 39px;
+				padding-right: 30px;
+				> span{
+					font-size: 23px;
+					color: #fff;
+					margin-left: 22px;
+				}
+			}
+		}
+		&__clock{
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: nowrap;
+			width: 100%;
+			&__item{
+				div{
+					border-width: 2px;
+					border-color: rgb(47, 123, 192);
+					border-style: solid;
+					border-radius: 50%;
+					background-color: rgb(255, 255, 255);
+					width: 91px;
+					height: 91px;
+					text-align: center;
+					p{
+						font-size: 30px;
+						font-family: "Roboto";
+						color: rgb(87, 87, 87);
+						font-weight: bold;
+						text-transform: uppercase;
+					}
+				}
+				p{
+					font-size: 18px;
+					font-family: "Open Sans";
+					color: rgb(87, 87, 87);
+					text-transform: uppercase;
+					text-align: center;
+					width: 91px;
+				}
+			}	
+		}
+		&__button{
+			border-width: 2px;
+			border-color: rgb(47, 123, 192);
+			border-style: solid;
+			border-radius: 26px;
+			background-color: rgb(255, 255, 255);
+			width: 226px;
+			height: 48px;
+			font-size: 24px;
+			font-family: "Open Sans";
+			color: rgb(47, 123, 192);
+			font-weight: bold;
+			text-transform: uppercase;
+			text-align: center;
+			cursor: pointer;
+			&:hover{
+				color: rgb(255, 255, 255);
+				background-color: rgb(47, 123, 192);
+			}
+		}
+		&__money{
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			&__item{
+				display: block;
+				font-size: 16px;
+				font-family: "Open Sans";
+				color: rgb(47, 123, 192);
+				text-transform: uppercase;
+				text-align: left;
+				position: relative;
+				text-decoration: none;
+				margin-top: 30px;
+				&--visa{
+					margin-left: 60px;
+					&:before{
+						content: '';
+						display: block;
+						position: absolute;
+						top: 2px;
+						left: -60px;
+						width: 60px;
+						height: 15px;
+						background:url('img/header_visa.png') no-repeat;
+					}
+				}
+				&--ethereum{
+					margin-left: 20px;
+					&:before{
+						content: '';
+						display: block;
+						position: absolute;
+						top: -7px;
+						left: -19px;
+						width: 18px;
+						height: 30px;
+						background:url('img/header_ethereum.png') no-repeat;
+					}
+				}
+				&--bitcoin{
+					margin-left: 15px;
+					&:before{
+						content: '';
+						display: block;
+						position: absolute;
+						top: -2px;
+						left: -15px;
+						width: 15px;
+						height: 25px;
+						background:url('img/header_bitcoin.png') no-repeat;
+					}
+				}
+				&--other{
+					margin-left: 15px;
+					&:before{
+						content: '';
+						display: block;
+						position: absolute;
+						top: 1px;
+						left: -15px;
+						width: 16px;
+						height: 16px;
+						background:url('img/header_other.png') no-repeat;
+					}
+				}
+			}
+		}
+	}
+	&__what{
+		text-align: center;
+		max-width: 410px;
+		margin-bottom: 50px;
+		&__title{
+			font-size: 24.289px;
+			font-family: "Currency";
+			color: rgb(47, 123, 192);
+			text-transform: uppercase;
+			margin: 0;
+			margin-bottom: 40px;
+		}
+		&__list{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			padding: 0;
+			margin: 0;
+			margin-top: 40px;
+			list-style: none;
+			li{
+				font-size: 18px;
+				font-family: "Open Sans";
+				color: rgb(87, 87, 87);
+				text-transform: uppercase;
+				text-align: left;
+				width: 40%;
+				margin-top: 15px;
+				position: relative;
+				padding-left: 10px;
+				&:before{
+					content: '';
+					display: block;
+					border-width: 2px;
+					border-color: rgb(47, 123, 192);
+					border-style: solid;
+					border-radius: 50%;
+					background-color: rgb(255, 255, 255);
+					position: absolute;
+					width: 3px;
+					height: 3px;
+					left: -10px;
+					top: 7px;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 460px) {
+	.header__coming__title{
+		font-size: 20px;
+	}
+	.header__coming__title--currency{
+		font-size: 35px;
+	}
+	.header__coming__bonus{
+		font-size: 16px;
+		line-height: 64px;
+			> span{
+				font-size: 18px;
+				padding-left: 30px;
+				padding-right: 20px;
+				> span{
+					font-size: 16px;
+					margin-left: 20px;
+				}
+			}
+	}
+	.header__coming__clock{
+		justify-content: space-around;
+	}
+	.header__coming__clock__item:last-child{
+		display: none;
+	}
+	.header__what{
+		iframe{
+			width: 90%;
+			margin: 0 auto;
+		}
+	}
+	.header__what__list{
+		margin: 0 auto;
+		width: 80%;
+		justify-content: center;
+		li{
+			display: block;
+			width: 80%;
+		}
+	}
+}
+@media screen and (max-width: 959px){
+	.header{
+		background-size: 100% auto;
+		background-position: 0 50%;
+	}
+}

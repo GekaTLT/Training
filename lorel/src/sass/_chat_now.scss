@@ -1,0 +1,29 @@
+.chat-now {
+	position: fixed;
+	border-radius: 50%;
+	width: 88px;
+	height: 88px;
+	z-index: 100;
+	background:url('img/chat_now_bg.png') no-repeat;
+	text-decoration: none;
+	bottom: 2%;
+	right: 2%;
+	p{
+		font-size: 14px;
+		font-family: "Open Sans";
+		color: rgb(252, 253, 254);
+		text-align: center;
+		text-transform: uppercase;
+		width: 45px;
+		height: 40px;
+		margin: 30px auto;
+	}
+}
+@media screen and (max-width: 800px) {
+	.chat-now {
+		bottom: -10px;
+		right: -5px;
+		border-radius: 50% 0 0 0;
+		background-color: #ffc923;
+	}
+}

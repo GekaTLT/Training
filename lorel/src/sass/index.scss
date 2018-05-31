@@ -1,0 +1,18 @@
+@import 'normalize';
+@import 'font';
+@import 'menu';
+@import 'chat_now';
+@import 'header';
+@import 'about';
+@import 'architecture';
+@import 'video';
+@import 'roadmap';
+@import 'paper';
+.article__title{
+	font-size: 48px;
+	font-family: "Open Sans";
+	color: rgb(47, 123, 192);
+	text-transform: uppercase;
+	text-align: center;
+	width: 100%;
+}

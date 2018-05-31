@@ -1,0 +1,144 @@
+.menu{
+	width: 100%;
+	background-color: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 50;
+	&--wrapper{
+		max-width: 1400px;
+		margin: 0 auto;
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		align-items: center;
+		height: 114px;
+		background-color: #fff;
+	}
+}
+.menu__logo{
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: nowrap;
+	align-items: center;
+	text-decoration: none;
+	img{
+		width: 67px;
+		height: 76px;	
+	}
+	p{
+		font-size: 48px;
+		font-family: "Open Sans";
+		color: rgb(47, 123, 192);
+		font-style: italic;
+		text-transform: uppercase;
+		text-align: center;
+		font-weight: 900;
+		margin: 0;
+		margin-left: 10px;
+		letter-spacing: 10px;
+	}
+}
+.menu__links{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	width: 50%;
+	list-style: none;
+	padding: 0;
+	transition: all 1s;
+	background-color: #fff;
+	li{
+		font-family: "Open Sans";
+		color: rgb(87, 87, 87);
+		text-transform: uppercase;
+		text-align: center;
+		cursor: pointer;
+		padding: 0 5px;
+		&:hover{
+			color: #4585c4;
+		}
+	}
+}
+.menu__lang{
+	width: 50px;
+	font-family: "Roboto";
+	color: rgb(47, 123, 192);
+	text-transform: uppercase;
+	text-align: center;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	option{
+		color: #000;
+	}
+}
+.menu__hamburger{
+	display: none;
+	width: 35px;
+	cursor: pointer;
+	hr{
+		border: none;
+		width: 35px;
+		height: 3px;
+		background-color: #000;
+	}
+}
+#menu__hamburger{
+	display: none;
+}
+
+@media screen and (max-width: 800px) {
+	.menu__hamburger{
+		display: block;
+	}
+	.menu--wrapper{
+		justify-content: space-around;
+	}
+	.menu__links{
+		display: block;
+		position: absolute;
+		width: 50vw;
+		height: 100vh;
+		padding-top: 114px;
+		padding-left: 0;
+		left: 0;
+		top: calc(-100vh - 114px);
+		margin: 0;
+		z-index: -1;
+		li{
+			margin-top: 15px;
+			margin-left: 20%;
+			text-align: left;
+		}
+	}
+	#menu__hamburger:checked ~ .menu__links{
+		top: 0;
+	}
+	.menu__logo{
+		img{
+			width: 43.5px;
+			height: 48px;
+		}
+		p{
+			font-size: 30px;
+		}
+	}
+	#menu__hamburger:checked + .menu__hamburger{
+		hr{
+			transition: all .5s; 
+		}
+		hr:nth-child(1){
+			transform: rotate(-45deg);
+			margin-top: 10px;
+		}
+		hr:nth-child(2){
+			opacity: 0;
+		}
+		hr:nth-child(3){
+			transform: rotate(45deg);
+			margin-top: -20px;
+		}
+	}
+	
+}

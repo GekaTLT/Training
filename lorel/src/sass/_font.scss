@@ -1,0 +1,40 @@
+@font-face { 
+	font-family: 'Open Sans'; 
+	font-style: italic; 
+	font-weight: normal; 
+	src: 
+		url('font/opensans-italic-webfont.woff2') format('woff2'), 
+		url('font/opensans-italic-webfont.ttf') format('truetype'),
+		url('font/opensans-italic-webfont.woff') format('woff');
+}
+@font-face { 
+	font-family: 'Open Sans'; 
+	font-style: normal; 
+	font-weight: normal; 
+	src: 
+		url('font/opensans-regular-webfont.woff2') format('woff2'), 
+		url('font/OpenSans-Regular.ttf') format('truetype'),
+		url('font/opensans-regular-webfont.woff') format('woff');
+}
+@font-face { 
+	font-family: 'Roboto'; 
+	font-style: normal; 
+	font-weight: normal; 
+	src: 
+		url('font/roboto-regular-webfont.woff2') format('woff2'), 
+		url('font/roboto-regular-webfont.ttf') format('truetype'),
+		url('font/roboto-regular-webfont.woff') format('woff');
+}
+@font-face { 
+	font-family: 'Currency'; 
+	font-style: normal; 
+	font-weight: normal; 
+	src: 
+		url('font/currency_regular-webfont.woff2') format('woff2'), 
+		url('font/Currency_Regular.ttf') format('truetype'),
+		url('font/currency_regular-webfont.woff') format('woff');
+}
+body{
+	font-size: 14.41px;
+	background-color: #fff;
+}
