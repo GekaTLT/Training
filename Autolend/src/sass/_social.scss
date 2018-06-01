@@ -1,0 +1,49 @@
+/* social (Мы в социальных сетях) */
+.social{
+	width: 100%;
+	background-color: rgb(66, 174, 197);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+	.social__title{
+		font-size: 30px;
+		color: rgb(255, 255, 255);
+		font-weight: bold;
+		text-transform: uppercase;
+		text-align: center;
+		line-height: 95px;
+		width: 100%;
+	}
+		.social__icon{
+			width: 102px;
+			height: 102px;
+			border-radius: 50%;
+			background-image: url(../img/sprite_social.png);
+			display: inline-block;
+			text-align: center;
+			cursor: pointer;
+			transition: all 0.5s;
+			margin: 20px 2vw;
+			&:hover{
+				transform: scale(1.2);
+				box-shadow: 0 0 30px 0 #fff;
+			}
+		}
+		.social__icon--vk{
+			background-position: 0px -204px;
+		}
+		.social__icon--facebook{
+			background-position: 0px 0px;
+		}
+		.social__icon--instagram{
+			background-position: 0px -102px;
+		}
+/* social end */
+
+@media screen and (max-width:450px) {
+	.social__title{
+		font-size: 5vw;
+	}
+}

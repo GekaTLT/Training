@@ -1,0 +1,33 @@
+{
+  "name": "autolend",
+  "version": "1.0.0",
+  "description": "lading page",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GekaTLT/Autolend.git"
+  },
+  "author": "Evgrnii Kuchin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GekaTLT/Autolend/issues"
+  },
+  "homepage": "https://github.com/GekaTLT/Autolend#readme",
+  "devDependencies": {
+    "browser-sync": "^2.19.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-server-livereload": "^1.9.2",
+    "gulp-sprite-generator": "^0.2.3",
+    "gulp-stylus": "^2.6.0",
+    "gulp.spritesmith": "^6.7.0"
+  }
+}

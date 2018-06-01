@@ -1,0 +1,46 @@
+/* picking (подбор) */
+.picking{
+	max-width: 1180px;
+	margin: 0 auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+}
+.picking__title{
+	width: 100%;
+	text-align: center;
+	font-size: 30px;
+	color: #000;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.picking__block{
+	position: relative;
+	text-align: center;
+	width: 580px;
+	height: 545px;
+	background: url(../img/picking_one.png) no-repeat;
+	background-position: center 35px;
+	&:last-child{
+		background: url(../img/picking__we.png) no-repeat;
+		background-position: center 70px;
+	}
+}
+.picking__block__title{
+	font-size: 24px;
+	color: rgb(26, 26, 26);
+	font-weight: bold;
+}
+.picking__block__title--blue{
+	color: rgb(66, 168, 236);
+}
+.picking__block__text{
+	margin: 388px auto;
+	max-width: 427px;
+	color: rgb(26, 26, 26);
+}
+/* picking (подбор) end */

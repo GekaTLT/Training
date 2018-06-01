@@ -1,0 +1,166 @@
+/* buy-auto (Как купить автомобиль)  */
+.buy-auto{
+	width: 100%;
+	background: url('../img/bg-why.png') repeat;
+	margin-top: 40px;
+}
+	.buy-auto--wrapper{
+		max-width: 1180px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+		padding: 40px 0;
+	}
+		.buy-auto__block{
+			width: 20%;
+			padding: 0 3%;
+			text-align: center;
+			margin-top: 40px;
+			position: relative;
+			&:after{
+				content: '';
+				position: absolute;
+				background-image: url(../img/sprite_arow.png);
+			}
+		}
+			.buy-auto__block__content{
+				margin-top: 30px;
+				color: rgb(8, 8, 8);
+				line-height: 1.2;
+			}
+		.buy-auto__block--margin{
+			margin-top: 80px;
+		}
+		.buy-auto__block--title{
+			width: 38%;
+			padding: 0 5%;
+		}
+		.buy-auto__block--finish{
+			width: 35%;
+		}
+		.buy-auto__block__content--title{
+			font-size: 30px;
+			color: rgb(8, 8, 8);
+			font-weight: bold;
+			text-transform: uppercase;
+			line-height: 1.3;
+		}
+		.buy-auto__block__content--finish{
+			font-size: 24px;
+			color: rgb(8, 8, 8);
+			line-height: 1.2;
+			text-align: left;
+			font-weight: bold;
+		}
+		.buy-auto__block__content--font-bold{
+			font-weight: bold;
+			font-size: 24px;
+		}
+		.buy-auto__block__img{
+			background-image: url(../img/sprite_buy_auto.png);
+			display: block;
+			margin: 0 auto;
+		}
+		.buy-auto__block__img--icon-binoculars {
+		  background-position: 0px -169px;
+		  width: 53px;
+		  height: 53px;
+		}
+		.buy-auto__block__img--icon-bus {
+		  background-position: 0px -120px;
+		  width: 53px;
+		  height: 49px;
+		}
+		.buy-auto__block__img--icon-faq {
+		  background-position: 0px -222px;
+		  width: 51px;
+		  height: 55px;
+		}
+		.buy-auto__block__img--icon-g {
+		  background-position: 0px -74px;
+		  width: 36px;
+		  height: 46px;
+		}
+		.buy-auto__block__img--icon-glasses {
+		  background-position: 0px 0px;
+		  width: 50px;
+		  height: 36px;
+		}
+		.buy-auto__block__img--icon-mobile-phone {
+		  background-position: 0px -277px;
+		  width: 56px;
+		  height: 56px;
+		}
+		.buy-auto__block__img--icon-talk {
+		  background-position: 0px -36px;
+		  width: 54px;
+		  height: 38px;
+		}
+
+		.buy-auto__block--order2{
+			&:after{
+				background-position: 0px -31px;
+				width: 73px;
+				height: 33px;
+				top: -66px;
+				right: 37%;
+				transform: rotate(-34deg);
+			}
+		}
+		.buy-auto__block--order3{
+			&:after{
+				background-position: 0px -148px;
+				width: 102px;
+				height: 51px;
+				bottom: -3px;
+				right: -18%;
+			}
+		}
+		.buy-auto__block--order4{
+			&:after{
+				background-position: 0px 0px;
+				width: 46px;
+				height: 15px;
+				bottom: 30px;
+				right: -9%;
+			}
+		}
+		.buy-auto__block--order5{
+			&:after{
+				background-position: 0px -199px;
+				width: 66px;
+				height: 91px;
+				bottom: -80px;
+				right: 10%;
+			}
+		}
+		.buy-auto__block--order6{
+			&:after{
+				background-position: 0px -99px;
+				width: 65px;
+				height: 49px;
+				bottom: -37px;
+				right: 32%;
+			}
+		}
+		.buy-auto__block--order7{
+			&:after{
+				background-position: 0px -15px;
+				width: 47px;
+				height: 16px;
+				top: 40px;
+				left: -7%;
+			}
+		}
+		.buy-auto__block--order8{
+			&:after{
+				background-position: 0px -64px;
+				width: 107px;
+				height: 35px;
+				top: 10px;
+				left: -27%;
+			}
+		}
+/* buy-auto end (Как купить автомобиль)  */

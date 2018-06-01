@@ -1,0 +1,24 @@
+.button{
+	display: block;
+	border-radius: 5px;
+	background-color: rgb(66, 174, 197);
+	height: 61px;
+	line-height: 61px;
+	padding: 0 16px;
+	font-size: 18px;
+	color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+	border: none;
+	cursor: pointer;
+}
+.button--blue{
+	background-color: rgb(0, 139, 232);
+	font-size: 14px;
+}
+
+@media screen and (max-width:750px) {
+	.button__none {
+		display: none;
+	}
+}

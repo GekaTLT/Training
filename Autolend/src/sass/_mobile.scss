@@ -1,0 +1,156 @@
+@media screen and (max-width:750px) {
+	.topForm{
+		text-align: center;
+	}
+	.topForm__title{
+		display: block;
+		margin: 0 auto;
+		width: 100%;
+		p:first-child{
+			padding-top: 70px;
+		}
+		&:after{
+		right: 50%;
+		bottom: -85px;
+		transform: rotate(90deg);
+		}
+	}
+	.topForm__interior{
+		display: block;
+		width: 100%;
+		padding: 125px 0;
+	}
+	.topForm__interior__sendForm{
+		margin: 0 auto;
+	}
+	/* sentence */
+	.sentence{
+		-ms-flex-pack: distribute;
+		justify-content: space-around;
+	}
+	/* sentence end */
+	/* -------------------------------------------------------- */
+	
+	/* key (Подбор автомобиля «под ключ») */
+	.key__title{
+		text-align: center;
+	}
+	/* key end (Подбор автомобиля «под ключ») */
+	/* value (Стоимость и виды услуг) */
+	
+	/* value end(Стоимость и виды услуг) */
+/* buy-auto (Как купить автомобиль)  */
+	.buy-auto--wrapper{
+		justify-content: space-around;
+	}
+	.buy-auto__block{
+		padding: 0;
+	}
+		.buy-auto__block--order1{
+			order: 1;
+			width: 100%;
+		}
+		.buy-auto__block--order2{
+			order: 2;
+			width: 210px;
+			padding: 0 calc(50% - 105px);
+			&:after{
+				background-position: 0px -15px;
+				width: 47px;
+				height: 16px;
+				top: 200px;
+				left: 32%;
+				transform: rotate( -35deg);
+			}
+		}
+		.buy-auto__block--order3{
+			order: 3;
+			width: 40%;
+			margin-top: 40px;
+			&:after{
+				bottom: 90px;
+				right: -31%;
+				transform: rotateX( 180deg);
+			}
+		}
+		.buy-auto__block--order4{
+			order: 4;
+			width: 40%;
+			margin-top: 80px;
+			&:after{
+				background-position: 0px -199px;
+				width: 66px;
+				height: 91px;
+				bottom: auto;
+				top: 147px;
+				right: -7%;
+				transform: rotate( -6deg);
+			}
+		}
+		.buy-auto__block--order5{
+		order: 5;
+		width: 40%;
+		margin-top: 40px;
+			&:after{
+				background-position: 0px -15px;
+				width: 47px;
+				height: 16px;
+				bottom: -30px;
+				right: 20%;
+				transform: rotate( -43deg);
+			}
+
+		}
+		.buy-auto__block--order6{
+		order: 6;
+		width: 40%;
+		margin-top: 80px;
+			&:after{
+				background-position: 0px -15px;
+				width: 47px;
+				height: 16px;
+				top: 62px;
+				left: -17%;
+				transform: rotate( 5deg);
+				bottom: auto;
+				right: auto;
+			}
+		}
+		.buy-auto__block--order7{
+		order: 7;
+		width: 40%;
+		margin-top: 40px;
+			&:after{
+				background-position: 0px -31px;
+				width: 73px;
+				height: 33px;
+				top: -4px;
+				right: -32%;
+				transform: rotate(34deg);
+				left: auto;
+			}
+		}
+		.buy-auto__block--order8{
+		order: 8;
+		width: 40%;
+		margin-top: 80px;
+			&:after{
+				background-position: 0px -199px;
+				width: 66px;
+				height: 91px;
+				bottom: -96px;
+				right: 8%;
+				transform: rotate( 10deg);
+				top: auto;
+				left: auto;
+			}
+		}
+		.buy-auto__block--order9{
+		order: 9;
+		width: 100%;
+		}
+		.buy-auto__block__content--finish{
+			text-align: center;
+		}
+/* buy-auto end (Как купить автомобиль)  */
+}

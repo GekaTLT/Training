@@ -1,0 +1,139 @@
+/* why (почему мы) */
+.why{
+	width: 100%;
+	background: url('../img/bg-why.png') repeat;
+	margin-top: 40px;
+}
+.why--wrapper{
+	max-width: 1180px;
+	position: relative;
+	padding: 0 70px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: 0 auto;
+	padding-bottom: 36px;
+}
+	.why__title{
+		font-size: 60px;
+		color: rgb(209, 209, 209);
+		font-weight: bold;
+		text-transform: uppercase;
+		position: absolute;
+		transform: rotate(-90deg);
+		top: 278px;
+		letter-spacing: 19px;
+		white-space: nowrap;
+	}
+	.why__title--left{
+		left: -12vw;
+	}
+	.why__title--right{
+		right: -12vw;
+		transform: rotate(90deg);
+	}
+	.why__item{
+		padding-top: 64px;
+		text-align: center;
+		width: 30%;
+		z-index: 10;
+	}
+		.item__icon{
+			border-radius: 50%;
+			width: 111px;
+			height: 111px;
+			margin: 0 auto;
+		}
+		.item__icon--piggy-bank{
+			background: url('../img/piggy-bank.png') center center no-repeat,
+				rgb(209, 209, 209);
+		}
+		.item__icon--mechanic{
+			background: url('../img/mechanic.png') center center no-repeat,
+				rgb(209, 209, 209);
+		}
+		.item__icon--diploma{
+			background: url('../img/diploma.png') center center no-repeat,
+				rgb(209, 209, 209);
+		}
+		.item__icon--medal{
+			background: url('../img/medal.png') center center no-repeat,
+				rgb(209, 209, 209);
+		}
+		.item__icon--handshake{
+			background: url('../img/handshake.png') center center no-repeat,
+				rgb(209, 209, 209);
+		}
+		.item__icon--flag{
+			background: url('../img/flag.png') center center no-repeat,
+				rgb(209, 209, 209);
+		}
+		.item__title{
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 16px;
+			display: block;
+		}
+		.item__dot{
+			border-radius: 50%;
+			background-color: rgb(209, 209, 209);
+			width: 13px;
+			height: 13px;
+			margin: 0 auto;
+			margin-bottom: 15px;
+		}
+		.item__content{
+			font-size: 16px;
+			color: rgb(36, 36, 36);
+			width: 205px;
+			margin: 0 auto;
+		}
+		.why__item:hover{ /* --------------Анимация */
+
+			.item__icon{
+				background-color: #42aec5;
+				-webkit-transform: scale(2);
+				transform: scale(1.2);
+				-webkit-transition: all 1s;
+				transition: all 1s;
+			}
+			.item__title{
+				-webkit-transform: scale(1.2);
+				transform: scale(1.2);
+			}
+			.item__dot{
+				background-color: #42aec5;
+			}
+		}
+/* why (почему мы) end */
+@media screen and (max-width:750px) {
+	/* why (почему мы) */
+	.why--wrapper{
+		padding: 0;
+		padding-bottom: 36px;
+	}
+	.why__item{
+		width: 50%;
+	}
+	.why__title--left{
+		left: calc(50% - 274px);
+	}
+	.why__title--right{
+		display: none;
+	}
+	/* why (почему мы) end */
+}
+@media screen and (max-width:405px){
+	.why__item{
+		width: 100%;
+	}
+	.why__title--left{
+		margin-top: 20px;
+		transform: rotate(0deg);
+		font-size: 30px;
+		position: static;
+		width: 100%;
+		text-align: center;
+		letter-spacing: 3px;
+	}
+}

@@ -1,0 +1,107 @@
+body{
+	margin: 0;
+}
+@import 'font'; /* шрифты */
+
+@import 'button'; /* кнопки */
+
+@import 'header';
+
+@import 'mobile-menu';
+/* Top Send Form -------------*/
+.topForm{
+	background: url(../img/toFormBG.png);
+	text-align: right;
+}
+.topForm__title{
+	position: relative;
+	display: inline-block;
+	font-size: 36px;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	width: 30%;
+	p:last-child{
+		font-weight: bold;
+	}
+	&:after{
+		content:'';
+		background: url(../img/triangle.png) no-repeat;
+		position: absolute;
+		width: 28px;
+		height: 71px;
+		z-index: 2;
+		right: -33px;
+		bottom: 35%;
+	}
+}
+.topForm__interior{
+	display: inline-block;
+	width: 42%;
+	background: url(../img/Mercedes-E-Class-019.png) no-repeat;
+	background-size: cover;
+	padding: 125px 4%;
+}
+.topForm__interior__sendForm{
+	border-width: 1px;
+	border-color: rgb(232, 232, 232);
+	border-style: solid;
+	background-color: #fff;
+	max-width: 504px;
+	height: 439px;
+	text-align: center;
+	color: #000;
+	.button{
+		margin: 0 auto;
+		width: 256px;
+		margin-top: 30px;
+	}
+}
+.topForm__interior__sendForm__text{
+	font-weight: bold;
+	font-size: 16px;
+	margin-top: 45px;
+	margin-bottom: 47px;
+}
+.topForm__interior__sendForm__text--big{
+	font-size: 38px;
+}
+.topForm__interior__sendForm__input{
+	display: block;
+	border-width: 1px;
+	border-color: rgb(232, 232, 232);
+	border-style: solid;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+	width: 256px;
+	height: 59px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	padding-left: 10px;
+}
+/* Top Send Form end */
+@import 'sentence'; /* sentence (предложение)*/
+
+@import 'picking'; /* picking (подбор) */
+
+@import 'test'; /* test (проверка авто) */
+
+@import 'why'; /* why (почему мы) */
+
+@import 'guarantee';/* guarantee (НАШИ ГАРАНТИИ) */
+
+@import 'key';  /* key (Подбор автомобиля «под ключ») */
+
+@import 'value'; /* value (Стоимость и виды услуг) */
+
+@import 'buy-auto';  /* Как купить автомобиль */
+
+@import 'reviews'; /* reviews (Мы помогли подобрать (отзывы наших клиентов)) */
+
+@import 'social'; /* social (Мы в социальных сетях) */
+
+@import 'footer';
+
+@import 'mobile';
+
+@import '_open_img'; /* Открыть img полном пазмере */

@@ -1,0 +1,53 @@
+/* sentence */
+.sentence{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	max-width: 1180px;
+	margin: 32px auto;
+	text-align: center;
+}
+.sentence__element{
+	width: 258px;
+	text-align: center;
+	margin-top: 30px;
+	.button{
+		background-color: rgb(232, 232, 232);
+		width: 258px;
+		height: 61px;
+		color: rgb(167, 167, 167);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+		&:hover{
+			background-color: rgb(66, 174, 197);
+			color: #fff;
+		}
+	}
+	&:nth-child(2) .sentence__element__img{
+		background-position: -33px 0;
+	}
+	&:nth-child(3) .sentence__element__img{
+		background-position: -92px 0;
+	}
+	&:nth-child(4) .sentence__element__img{
+		background-position: -152px 0;
+	}
+}
+.sentence__element__img{
+	width: 55px;
+	height: 51px;
+	background:url(../img/sentence.png) no-repeat;
+	margin-bottom: 22px;
+	margin: 0 auto;
+	background-position: 17px 0;
+	margin-bottom: 22px;
+}
+.sentence__element__text{
+	margin-bottom: 34px;
+	span{
+		font-size: 24px;
+		font-weight: bold;
+	}
+}
+/* sentence end */

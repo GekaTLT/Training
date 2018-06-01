@@ -1,0 +1,213 @@
+/* value (Стоимость и виды услуг) */
+.value{
+	max-width: 1180px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: 0 auto;
+	padding-bottom: 40px;
+}
+	.value__title{
+	 	width: 100%;
+	 	text-transform: uppercase;
+	 	font-weight: bold;
+	 	text-align: center;
+	 	line-height: 100px;
+	 	order: -10;
+	}
+	.value__price{
+		position: relative;
+		border-width: 1px;
+		border-color: rgb(232, 232, 232);
+		border-style: solid;
+		max-width: 324px;
+		min-height: 564px;
+		text-align: center;
+		padding: 25px;
+		margin-top: 20px;
+		hr{
+			border-width: 1px;
+			border-color: rgb(232, 232, 232);
+			border-style: solid;
+			max-width: 232px;
+			height: 0;
+			margin-bottom: 30px;
+		}
+	}
+		.value__price__title{
+			color: rgb(0, 0, 0);
+			text-transform: uppercase;
+			height: 55px;
+		}
+		.value__price__content{
+			font-size: 16px;
+			color: rgb(0, 0, 0);
+			text-align: left;
+			margin-bottom: 25px;
+			padding-left: 40px;
+			position: relative;
+		}
+		.value__price__amount{
+			text-align: left;
+			line-height: 10px;
+			span{
+				font-size: 10px;
+				color: rgb(0, 0, 0);
+				margin-top: 15px;
+			}
+		}
+.value__price--centre{
+	position: relative;
+	border: none;
+	max-width: 326px;
+	min-height: 566px;
+	background-color: #42aec5;
+	margin-top: 0;
+	margin: 0 auto;
+	hr{
+		border-color: #fff;
+	}
+	&:after{
+		content: '';
+		background-image: url(../img/benefit.png);
+		width: 71px;
+		height: 71px;
+		position: absolute;
+		top: -20px;
+		right: -20px;
+	}
+}
+.value__price__title--centre{
+	color: #fff;
+}
+.value__price__content--centre{
+	color: #fff;
+
+}
+.value__price__amount--centre{
+	color: #fff;
+	span{
+		color: #fff;
+	}
+}
+.button--value{
+	position: absolute;
+	width: 70%;
+	bottom: -30px;
+	left: 15%;
+	right: 15%;
+}
+.button--value-centre{
+	background-color: rgb(233, 243, 245);
+	color: #42aec5;
+}
+			/* sprite */
+.value__price__content:before{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-image: url('../img/sprite_value.png');
+}
+.value__price__content--icon-abacus:before {
+  background-position: 0px -336px;
+  width: 26px;
+  height: 26px;
+}
+.value__price__content--icon-controls:before {
+	background-position: 0px -362px;
+	width: 26px;
+	height: 26px;
+}
+.value__price__content--icon-delivery-man:before {
+	background-position: 0px -258px;
+	width: 26px;
+	height: 26px;
+}
+.value__price__content--icon-focus:before {
+	background-position: 0px -284px;
+	width: 26px;
+	height: 26px;
+}
+.value__price__content--icon-glasses:before {
+	background-position: 0px 0px;
+	width: 26px;
+	height: 12px;
+}
+.value__price__content--icon-growth:before {
+	background-position: 0px -30px;
+	width: 23px;
+	height: 19px;
+}
+.value__price__content--icon-handshake:before {
+	background-position: 0px -68px;
+	width: 26px;
+	height: 20px;
+}
+.value__price__content--icon-light-bulb:before {
+	background-position: 0px -310px;
+	width: 22px;
+	height: 26px;
+	top: -7px;
+}
+.value__price__content--icon-list:before {
+	background-position: 0px -12px;
+	width: 26px;
+	height: 18px;
+}
+.value__price__content--icon-microscope:before {
+	background-position: 0px -388px;
+	width: 20px;
+	height: 26px;
+}
+.value__price__content--icon-percentage:before {
+	background-position: 0px -206px;
+	width: 26px;
+	height: 26px;
+}
+.value__price__content--icon-percentagewhite:before {
+	background-position: 0px -232px;
+	width: 26px;
+	height: 26px;
+}
+.value__price__content--icon-photo-camera:before {
+	background-position: 0px -88px;
+	width: 26px;
+	height: 22px;
+}
+.value__price__content--icon-queen:before {
+	background-position: 0px -49px;
+	width: 26px;
+	height: 19px;
+}
+.value__price__content--icon-question:before {
+	background-position: 0px -157px;
+	width: 26px;
+	height: 24px;
+}
+.value__price__content--icon-search:before {
+	background-position: 0px -110px;
+	width: 23px;
+	height: 23px;
+}
+.value__price__content--icon-start-and-finish:before {
+	background-position: 0px -181px;
+	width: 23px;
+	height: 25px;
+}
+.value__price__content--icon-test:before {
+	background-position: 0px -133px;
+	width: 26px;
+	height: 24px;
+}
+			/* sprite end */
+@media screen and (max-width: 380px*3) {
+	.value__wrapper--centre{
+		order: -1;
+		width: 100%;
+	}
+	.value__price{
+		margin-bottom: 70px;
+	}
+}
+/* value end  */

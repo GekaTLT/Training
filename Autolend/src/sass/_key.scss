@@ -1,0 +1,99 @@
+// key (Подбор автомобиля «под ключ»)
+.key {
+	width: 100%;
+	padding: 35px 0;
+	background: url('../img/bgkey.png') 50% 50% no-repeat;
+	background-size: cover;
+	position: relative;
+	}
+.key--wrapper {
+	max-width: 1180px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: 0 auto;
+	}
+	.key__title {
+		width: 100%;
+		text-align: left;
+		font-size: 30px;
+		color: rgb(255, 255, 255);
+		font-weight: bold;
+		text-transform: uppercase;
+		line-height: 30px;
+		margin-bottom: 40px;
+		}
+	.key__list {
+		width: 850px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		}
+		.key__list__item {
+			width: 425px - 90px;
+			background: url('../img/sprite_key.png') no-repeat;
+			padding-left: 90px;
+			margin-bottom: 50px;
+			p{
+				font-size: 24px;
+				color: rgb(255, 255, 255);
+				margin: 0;
+			}
+		}
+		$bgPosition: 20px;
+		.key__list__item--abacus{
+			background-position: $bgPosition -84px;
+			height: 49px;
+		}
+		.key__list__item--controls{
+			background-position: $bgPosition -133px;
+			height: 49px;
+		}
+		.key__list__item--queen{
+			background-position: $bgPosition 0px;
+			height: 37px;
+		}
+		.key__list__item--question{
+			background-position: $bgPosition -37px;
+			height: 47px;
+		}
+		.key__list__item--search{
+			background-position: $bgPosition -182px;
+			height: 51px;
+		}
+		.key__list__item--start-and-finish{
+			background-position: $bgPosition -233px;
+			height: 51px;
+		}
+	.key__send {
+		border-radius: 50%;
+		background-color: #fff;
+		text-align: center;
+		width: 260px;
+		height: 260px;
+		position: relative;
+		margin: 0 35px;
+	}
+		.key__send__content {
+			margin: 0 45px;
+			span{
+				display: block;
+				font-weight: bold;
+				font-size: 24px;
+				margin-top: 60px;
+				margin-bottom: 35px;
+			}
+		}
+			.button--key{
+				font-size: 16px;
+				color: rgb(0, 139, 232);
+				font-weight: bold;
+				text-transform: uppercase;
+				background-color: rgb(255, 255, 255);
+				width: 218px;
+				height: 61px;
+				border: 1px solid #0274c1;
+				position: absolute;
+				bottom: 0;
+			}
+// <key end (Подбор автомобиля «под ключ»)
