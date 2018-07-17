@@ -5,29 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>js-task-01</title>
-    <style>
-        table{
-            text-align: center;
-            position: relative;
-        }
-        .Game_Over{
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            background-color: rgba(255,255,255,0.6);
-            padding-top: 30%;
-            box-sizing: border-box;
-        }
-    </style>
 </head>
 <body>
-<table id="table" cellspacing="1"  bordercolor="blue"></table>
-<input type="number" id="width" placeholder="ширина">
-<input type="number" id="height" placeholder="высота">
-<input type="number" id="bomb" placeholder="количество бомб">
-<input type="button" value="старт" id="start">
+<div class="root__title"></div>
+<div id="root">
+    <div class="root__title"></div>
+    <input type="button" class="root__button" id="button">
+</div>
     <script src="main.js"></script>
 </body>
 </html>

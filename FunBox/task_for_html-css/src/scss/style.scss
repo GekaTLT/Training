@@ -1,0 +1,75 @@
+@import "fonts";
+
+
+body{
+  margin: 0;
+}
+.root{
+  width: 100vw;
+  min-height: 100vh;
+  background: url("../img/bg_root.png") repeat;
+  display: table;
+  text-align: center;
+}
+.cats-food{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.cats-food__title{
+  width: 90%;
+  font-size: 36px;
+  font-family: "Exo 2.0", serif;
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: center;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.004);
+  font-weight: 300;
+  margin: 0 auto;
+}
+.cats-food__content{
+  margin-top: 23px;
+  text-align: center;
+}
+.cats-food__element{
+  display: inline-block;
+  margin-right: 76px;
+  input{
+    display: none;
+  }
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
+@import "card";
+@import "selected";
+@import "signature";
+@import "disabled";
+
+
+@media screen and (max-width: 1130px) {
+  .cats-food__element{
+    margin: 20px 40px;
+    &:first-child{
+      margin: 0;
+      width: 100%;
+      text-align: center;
+    }
+    &:last-child{
+      margin-right: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .cats-food__element{
+    margin: 20px 0;
+    &:first-child{
+      width: auto;
+    }
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}

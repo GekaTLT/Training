@@ -5,13 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>js-task-01</title>
+    <style>
+        .enter{
+            margin-top: 50px;
+            margin-bottom: 50px;
+            display: block;
+            text-align: center;
+            width: 300px;
+        }
+        a{
+            display: block;
+            position: relative;
+            top: 0;
+            left: -20px;
+            width: 0;
+            height: 0;
+            border-right: 20px solid transparent;
+        }
+    </style>
 </head>
 <body>
-<div class="root__title"></div>
-<div id="root">
-    <div class="root__title"></div>
-    <input type="button" class="root__button" id="button">
-</div>
+
+<label>
+    <input type="text" data-popup-template="Этот адрес будет использоваться....input" data-popup-side="right">
+</label>
+
+<div class="enter" data-popup-template="Этот адрес будет использоваться...." data-popup-side="right">войти на сайт</div>
+<p  data-popup="Этот адрес будет использоваться....input111111111111111111111111111111111" data-popup-side="above" style="width: 500px; background:#555;">TEST</p>
+
+<script type="text/x-template" id="template-login-popup">
+    <div>  введите ваш логин и пароль  111111111111111111111111111111111111111111111111111111111111111111111111</div>
+    <input style="margin:5px; display: block;" type="text">
+    <input style="margin:5px; display: block;" type="text">
+    <input style="margin:5px; display: block; padding: 0 20px" type="button" value="ok">
+</script>
+
     <script src="main.js"></script>
 </body>
 </html>

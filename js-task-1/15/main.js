@@ -1,35 +1,26 @@
 'use strict';
 
-function type(elem) {
-    switch (typeof elem){
-        case "boolean":
-            return "boolean";
-
-        case "number":
-            return "number";
-
-        case "string":
-            return "string";
-
-        case "undefined":
-            return "undefined";
-
-        case "object":
-            if (elem === null){
-                return 'null'
-            } else if (Object.prototype.toString.call(elem) === '[object Array]'){
-                return 'array'
-            }
-            return "object";
-        default:
-            return 'ошибка'
+function shallowCopy(obj) {
+    let newObj = {};
+    if (Object.prototype.toString.call(obj) === '[object Date]'){
+        newObj = new Date(obj.valueOf())
+    } else {
+        for (let item in obj){
+            newObj[item] = obj[item]
+        }
     }
+    return newObj
 }
 
-console.log(type(123));
-console.log(type('1230'));
-console.log(type(false));
-console.log(type(null));
-console.log(type(undefined));
-console.log(type({}));
-console.log(type([]));
+let a = { x: 1, y: 2, z: [1, 2, 3] };
+let b = shallowCopy(a); // b — это отдельный объект
+b.x = 10;
+console.log(a.x); // 1
+
+b.z.push(4);
+console.log(a.z); // [1, 2, 3, 4]
+
+let c = new Date(2014, 1, 1);
+let d = shallowCopy(c);
+d.setFullYear(2015);
+console.log(c.getFullYear()); // 2014

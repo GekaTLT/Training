@@ -1,0 +1,23 @@
+.cats-food__element input:checked{
+  $color-selected: #d91667;
+  ~.card{
+    &:before{
+      border-color:$color-selected;
+    }
+    .card--border-color {
+      border-color: $color-selected;
+    }
+    .card__main__weight{
+      background-color: $color-selected;
+    }
+  }
+  ~.signature{
+    .signature__default {
+      display: none;
+    }
+    .signature__selected{
+      display: block;
+    }
+  }
+}
+

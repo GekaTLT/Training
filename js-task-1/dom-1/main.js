@@ -1,31 +1,21 @@
 'use strict';
 
-function deepCopy(obj) {
-    let newObj = Object.prototype.toString.call(obj) === '[object Array]'? []: {};
-    if (Object.prototype.toString.call(obj) === '[object Date]') {
-        newObj = new Date(obj.valueOf())
-    } else {
-        for (let item in obj) {
-            if (typeof obj[item] === "object" && obj[item] !== null) {
-                newObj[item] = deepCopy(obj[item])
-            } else {
-                newObj[item] = obj[item]
-            }
-        }
-    }
-
-    return newObj
+function hasClass(node, klass){
+     return new RegExp(`(\\s|^)${klass}(\\s|$)`,'i').test(node.className);
 }
+function addClass(node, klass){
+    if (!new RegExp(`(\\s|^)${klass}(\\s|$)`,'i').test(node.className)){
+        node.className += ' ' + klass
+    }
+}
+function removeClass(node, klass){
+    if (new RegExp(`(\\s|^)${klass}(\\s|$)`,'i').test(node.className)){
+        node.className = node.className.replace(new RegExp(`(\\s|^)${klass}(\\s|$)`,'i'), ' ').replace(/^\s+|\s+$/g, '')
+    }
+}
+let a = document.getElementsByTagName('div')[0];
 
-
-let a = { x: 1, y: 2, z: [1, 2, 3], u: undefined, v: null, w: new Date(2014, 1, 1, 12, 0, 0) };
-let b = deepCopy(a); // b — это отдельный объект
-console.log( typeof new Date(2014, 1, 1, 12, 0, 0));
-b.x = 10;
-console.log(a.x); // 1
-
-b.z.push(4);
-console.log(a.z); // [1, 2, 3]
-
-b.w.setFullYear(2015);
-console.log(a.w.getFullYear()); // 2014
+addClass(a, 'test4');
+console.log(hasClass(a, 'test4'));
+removeClass(a,'test2');
+console.log(hasClass(a, 'test2'));

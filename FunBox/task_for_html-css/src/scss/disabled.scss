@@ -1,0 +1,35 @@
+.cats-food__element input[disabled]{
+  $color-disabled: #b3b3b3;
+  ~.card{
+    cursor: default;
+    color: $color-disabled;
+    &:before{
+      border-color:$color-disabled;
+    }
+    .disabled-block{
+      display: block;
+    }
+
+    .card--border-color {
+      border-color: $color-disabled;
+    }
+    .card__main__weight{
+      background-color: $color-disabled;
+    }
+    .card__main__bonus{
+      color: $color-disabled;
+    }
+  }
+
+  ~.signature{
+    .signature__default {
+      display: none;
+    }
+    .signature__selected{
+      display: none;
+    }
+    .signature__disabled{
+      display: block;
+    }
+  }
+}

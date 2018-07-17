@@ -1,0 +1,24 @@
+.signature{
+  width: 100%;
+  font-size: 13px;
+  font-family: "Trebuchet MS", sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin: 13px 0;
+}
+.signature__default{
+  display: block;
+  label{
+    color: #107cb2;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    cursor: pointer;
+  }
+}
+.signature__selected{
+  display: none;
+}
+.signature__disabled{
+  display: none;
+  color: rgb(255, 255, 102);
+}
